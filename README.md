@@ -1,7 +1,16 @@
 
 # Proje Kurulumu
+Terminalde bu komut çalıştırıldıktan sonra proje çalıştırılmaya hazır
+
 ```
 npm install
+```
+
+# Proje Deploy
+Projeyi bir sunucuda yayınlarken bu komutu çalıştırıp dist dosyasının sunucuya yüklenmesi yeterli
+
+```
+npm run build
 ```
 
 ## Nasıl Çalışır ?

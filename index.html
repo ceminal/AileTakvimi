@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aile Kutlamaları</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="/assets/bdaycake.png">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: "#eb6347",
+              "primary-dark": "#d95538",
+              background: "#f8f6f6",
+              surface: "#ffffff",
+              text: "#1e293b",
+              subtext: "#64748b",
+              // Dark Mode Palette
+              dark: {
+                bg: "#37353E",      // Requested background
+                card: "#2A2830",    // Darker surface for contrast
+                text: "#F1F5F9",    // Light text
+                subtext: "#94A3B8", // Muted text
+                border: "rgba(255,255,255,0.08)"
+              }
+            },
+            fontFamily: {
+              sans: ["Plus Jakarta Sans", "sans-serif"],
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        /* Smooth background transition */
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      /* Smooth scroll */
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Confetti animation keyframes */
+      @keyframes pop {
+        0% { transform: scale(0); opacity: 0; }
+        50% { transform: scale(1.2); opacity: 1; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+      .animate-pop {
+        animation: pop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+      }
+      
+      /* Dark mode specific global overrides if needed */
+      html.dark body {
+        background-color: #37353E;
+        color: #F1F5F9;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "canvas-confetti": "https://aistudiocdn.com/canvas-confetti@^1.9.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background text-text dark:bg-dark-bg dark:text-dark-text">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

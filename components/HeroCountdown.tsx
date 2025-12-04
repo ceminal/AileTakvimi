@@ -139,8 +139,6 @@ const HeroCountdown: React.FC<HeroCountdownProps> = ({ people }) => {
         <p className="text-3xl sm:text-4xl font-extrabold text-white mt-4 tracking-tight">
           {isBirthdayToday
             ? multiplePeople
-              ? `Bugün ${getFormattedAges()} yaşlarına giriyorlar! 🎉`
-              : `Bugün ${getTurningAge(people[0].birthDate)} yaşına giriyor! 🎉`
             : `${formattedNames} • ${getNextBirthday(primaryPerson.birthDate).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long' })}`}
         </p>
         {/* <p className="text-white/90 font-medium mt-2 text-lg">
@@ -151,7 +149,7 @@ const HeroCountdown: React.FC<HeroCountdownProps> = ({ people }) => {
             : `${getNextBirthday(primaryPerson.birthDate).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long' })} tarihinde ${multiplePeople ? 'yeni yaşlarını kutluyorlar.' : `${getTurningAge(primaryPerson.birthDate)} yaşına giriyor.`}`}
         </p> */}
 
-        <h1 className="text-white/90 font-medium mt-2 text-lg">
+        <h1 className="text-white/90 font-medium mt-2 text-3xl">
           {isBirthdayToday ? `İyi ki Doğdun ${formattedNames}!` : `Doğum gününe kalan süre`}
         </h1>
 
@@ -179,7 +177,7 @@ const HeroCountdown: React.FC<HeroCountdownProps> = ({ people }) => {
 
         {isBirthdayToday && (
           <div className="mt-8 bg-white text-orange-600 px-8 py-3 rounded-full font-bold shadow-lg animate-pulse cursor-pointer hover:scale-105 transition-transform">
-            Kutlama Mesajı Gönder 🎂
+            🎂
           </div>
         )}
       </div>

@@ -5,7 +5,7 @@ npm install
 ```
 
 ## Nasıl Çalışır ?
-data.json dosyası içerisinde gerekli alanlar doldurulur.
+data.json dosyası içerisine aşağıdaki formatta istenilen kişileri girin
 id ler aynı olmamalı
 Doğum günü formatı(yıl-ay-gün)
 ```

@@ -14,14 +14,14 @@ npm run build
 ```
 
 ## Nasıl Çalışır ?
-data.json dosyası içerisine aşağıdaki formatta istenilen kişileri girin
-id ler aynı olmamalı
-Doğum günü formatı(yıl-ay-gün)
+data.json dosyası içerisine aşağıdaki formatta istenilen kişileri girin <br>
+id ler aynı olmamalı <br>
+Doğum günü formatı(yıl-ay-gün) <br>
 ```
   {
         "id": "1",
         "name": "Örnek İsim",
         "birthDate": "1996-08-29",
         "avatarUrl": "istenilen avatar"
-    }
+  }
 ```
